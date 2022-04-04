@@ -1,6 +1,10 @@
-h1{color: white; font-size: 16px;}
-body{background-color: red;}
-#foto-MG {position: }
+h1{color: rgb(0, 0, 0); font-size: 16px;}
+body{background-color: rgb(255, 0, 0);}
+#foto-MG {width: 100%;
+}
+#foto-jep{width: 6%;
+    
+}
 #modelodecaja{
     width: 300px ;
     border: 15px solid green; 
@@ -10,5 +14,29 @@ body{background-color: red;}
 #icono-telefono{ 
 position: fixed; bottom: 30px;
 right: 20px;
+}
 
+menu{
+    list-style-type: none; 
+}
+menu > a > li{
+    display: inline;
+    
+
+}
+table{border: 1px solid black;}
+th{border: 1px solid black;}
+td  {border: 1px solid black;}
+
+#MENU{float: right;}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+}
+.col-8{
+    border: 1px solid black
+}
+.col{
+    border: 1px solid black;
 }
