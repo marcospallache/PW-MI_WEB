@@ -1,0 +1,173 @@
+body{background-color: #EFE4B0;}
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+#container2
+{
+    height: 1000;
+    width: 1000;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #EFE4B0;
+}
+/* logo css */
+#logo
+{
+    position: absolute;
+    top: 30px;
+    left: 5% ;
+    font-size: 35px;
+    color: skyblue;
+    font-weight: bolder;
+}
+/* navbar */ 
+#navbar
+{
+    height: 30px;
+    width: 925px;
+    position: absolute;
+    top: 35px;
+    right: 5%;
+    border-radius: 20px;
+    z-index: 999;
+    overflow: hidden;
+}
+#navbar > ul
+{
+    height: 100%;
+    width: 965px;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+}
+#navbar > ul > li > a
+{
+    height: 100%;
+    width: auto;
+    margin: 0 70px;
+    font-size: 17px;
+    margin-left: 0;
+    display: grid;
+    place-items: center;
+    padding: 0 20px;
+    text-decoration: none;
+    color: black;
+}
+#navbar > ul > li > a:hover
+{
+    color: skyblue;
+    border-bottom: 2px solid skyblue;
+    width: calc(100% - 150px);
+}
+/* REDES SOCIALES */
+#spotify
+{
+    position: fixed; bottom: 50%;
+    right: 16px;
+    color: #7a5c3c;
+    background: #EFE4B0;
+    font-size: 30px;
+}
+#spotify:hover
+{
+    background: transparent;
+    color: skyblue;
+    border: none
+}
+#soundcloud
+{
+    position: fixed; bottom: 43%;
+    right: 13px;
+    color: #7a5c3c;
+    background: #EFE4B0;
+    font-size: 30px; 
+}
+#soundcloud:hover
+{
+    background: transparent;
+    color: skyblue;
+    border: none
+}
+#instagram
+{
+    position: fixed; bottom: 36%;
+    right: 16px;
+    color: #7a5c3c;
+    background: #EFE4B0;
+    font-size: 30px;   
+}
+#instagram:hover
+{
+    background: transparent;
+    color: skyblue;
+    border: none
+}
+#youtube
+{
+    position: fixed; bottom: 57%;
+    right: 13px;
+    color: #7a5c3c;
+    background: #EFE4B0;
+    font-size: 30px;
+}
+#youtube:hover
+{
+    background: transparent;
+    color: skyblue;
+    border: none  
+}
+#tiktok
+{
+    position: fixed; bottom: 29%;
+    right: 16px;
+    color: #7a5c3c;
+    background: #EFE4B0;
+    font-size: 30px;   
+}
+#tiktok:hover
+{
+    background: transparent;
+    color: skyblue;
+    border: none  
+}
+#contenido
+{
+    height: auto;
+    width: 900px;
+    position: absolute;
+    left: 5%;
+    top: 100px;
+}
+#contenido > h2
+{
+    font-size: 60px;
+    color: #7a5c3c;
+}
+#bio
+{
+    height: auto;
+    width: 600px;
+    position: absolute;
+    right: 25%;
+    top: 190px;
+}
+#bio > h3
+{
+    font-size: 20px;
+}
+#vantin
+{
+height: 400px;
+width: 350px;
+}
+#bio
+{
+    display: flex;
+    justify-content: center;
+}
