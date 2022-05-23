@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/457a6af2cc.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEΛTS & K!TS BY VΛNT!N</title>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+    <section id="banner">
+        <img src="./IMAGENES/logo.png" alt="" id="logo">
+        <div id="banner-text">
+            <h1>BEΛTS & K!TS</h1> 
+            <p>100% Original Productions For Sale</p>
+            <div id="banner-btn">
+                <a href="#footer"><span></span>Contact Vantin</a>
+                <a href="#BIOGRAFIA"><span></span>Read More</a>
+            </div>
+        </div>
+
+    </section>
+    <div id="side-nav">
+        <nav>
+        <ul>
+            <li><a href="#banner">HOME</a></li>
+            <li><a href="#BIOGRAFIA">ΛBOUT VΛNT!N</a></li>
+            <li><a href="#SERVICIOS">SERV!CES</a></li>
+            <li><a href="#footer">CONTΛCT</a></li>
+
+        </ul>
+        </nav>
+    </div>
+    <div id="menu-btn">
+        <img src="./IMAGENES/menu.png" alt="" id="menu">
+    </div>
+
+<!-- BIO DE VANTIN-->
+<section id="BIOGRAFIA">
+<div id="titulo-texto">
+    <p>ΛBOUT VΛNT!N</p>
+    <h1>ΛN UPCOMING PRODUCER</h1>
+</div>
+<div id="bio-box">
+    <div id="bio">
+        <div id="bio-desc">
+            <div id="texto1">
+            <p>Vantin is an Artist/Producer/Engineer born in Uruguay and currently located in Los Angeles, California. He is currently pursuing a degree in Music Technology with a Digital Arts minor at the California Institute of the Arts. <br> <br> Vantin, apart from making his own original music,  works with artists from all genres to create a good-sounding project, involving the artist in the production of the song to create a work of art with intention. He recently started writing scores for movies and commercials.</p>
+            </div>
+        </div>
+        
+    </div>
+    <div id="bio-img">
+        <img src="./IMAGENES/VANTIN 1.jpg" alt="">
+    </div>
+</div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="SERVICIOS">
+    <div id="titulo-texto">
+        <p>SERVICES</p>
+        <h1>CHECK OUT VΛNT!N'S LΛTEST PRODS</h1>
+    </div>
+    <div id="service-box">
+        <div id="single-service">
+            <img src="./IMAGENES/LIMELOVE.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>LIME LOVE</h3>
+                <hr>
+                <button class="reproductor">
+                    <i class="fa-solid fa-play" id="boton"></i>
+                </button>
+            </div>
+        </div>
+        <div id="single-service">
+            <img src="./IMAGENES/jazz.jpg" alt="" id="jazz">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>JAZZ</h3>
+                <hr>
+                <button class="reproductor">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+            </div>
+        </div>
+        <div id="single-service">
+            <img src="./IMAGENES/r&n.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>R&B</h3>
+                <hr>
+                <button class="reproductor">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+            </div>
+        </div>
+        <div id="single-service">
+            <img src="./IMAGENES/techno.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>TECHNO</h3>
+                <hr>
+                <button class="reproductor">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="LoveLime">
+        <source src="./MUSICA/LIME LOVE.mp3" type="audio/mp3">
+    </audio>
+    <script>
+
+        let LoveLime = document.getElementById("LoveLime");
+        let icon = document.getElementById("boton")
+        icon.onclick = function(){
+           LoveLime.play()
+        }
+    </script>
+</section>
+
+<!-- CONTACT -->
+<section id="footer">
+    <div id="titulo-texto">
+        <p>WΛNT Λ CUSTOM PROD?</p>
+        <h1>REACH OUT TO VΛNT!N</h1>
+    </div>
+
+    <div class="hero">
+        
+        
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" id="Name" required>
+                    <label for="Name"><i class="fa-solid fa-user"></i> Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="Number" required>
+                    <label for="Number"><i class="fa-solid fa-phone"></i> Number</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="subject" required>
+                    <label for="subject"><i class="fa-solid fa-music"></i> Subject</label>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <textarea id="message" rows="8" required></textarea>
+                <label for="message"><i class="fa-solid fa-comments"></i> Message</label>
+            </div>
+            <button type="submit"><i class="fa-solid fa-paper-plane"></i> SUBMIT</button>
+            
+        </form>
+    
+    
+    </div>
+    <div class="social-links">
+        <a href="https://open.spotify.com/artist/2NhHw4kVaLv7vgRYQmxgtr">
+            <i class="fa fa-spotify"></i>
+        </a>
+        <a href="https://www.instagram.com/valencorree/">
+            <i class="fa fa-instagram"></i>
+        </a>
+        <i class="fa fa-soundcloud"></i>
+    </div>
+
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+    
+    function sendEmail(){
+                Email.send({
+            Host : "smtp.gmail.com",
+            Username : "marcos.pallache02@gmail.com",
+            Password : "palida123",
+            To : 'pakotaz98@gmail.com',
+            From : document.getElementById("email").value, 
+            Subject : "New Contact Form Enquiry",
+            Body : "And this is the body"
+        }).then(
+        message => alert(message)
+        );
+
+    }
+    </script>
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let Menubtn = document.getElementById("menu-btn")
+        let Sidenav = document.getElementById("side-nav")
+        let Menu = document.getElementById("menu")
+
+        Sidenav.style.right = "-250px";
+
+        Menubtn.onclick = function(){
+            if(Sidenav.style.right == "-250px"){
+                Sidenav.style.right = "0";
+                menu.src = "IMAGENES/close.png";
+            }
+            else{
+                Sidenav.style.right = "-250px"
+                menu.src = "IMAGENES/menu.png";
+            }
+        }
+
+        var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+
+    </script>
+    
+</body>
+</html>
