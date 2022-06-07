@@ -163,20 +163,7 @@
     </audio>
     <script>
 
-        let LoveLime = document.getElementById("LoveLime");
-        let icon = document.getElementsByClassName("fa-solid fa-play")
-        icon.addEventListener("click", ()=>{
-            if(LoveLime.paused){
-                LoveLime.play();
-                icon.classlist.remove("fa-solid fa-play")
-                icon.classlist.add("fa-solid fa-pause")
-            }else{
-                LoveLime.pause()
-                icon.classlist.add("fa-solid fa-play")
-                icon.classlist.remove("fa-solid fa-pause")
-            }
-        })
-
+      
 
     </script>
 </section>
@@ -194,7 +181,7 @@
         <form action="https://formsubmit.co/8ed61226f9703332c450ab5967e81151" method="post">
             <div class="row">
                 <div class="input-group">
-                    <input name="Nombre" type="text" id="Name" required>
+                    <input name="Full Name" type="text" id="Name" required>
                     <label for="Full Name"><i class="fa-solid fa-user"></i> Name</label>
                 </div>
                 <div class="input-group">
@@ -214,7 +201,7 @@
             </div>
             
             <div class="input-group">
-                <textarea id="message" rows="8" required></textarea>
+                <textarea name="Message" id="message" rows="8" required></textarea>
                 <label for="message"><i class="fa-solid fa-comments"></i> Message</label>
             </div>
             <button type="submit"><i class="fa-solid fa-paper-plane"></i> SUBMIT</button>
@@ -280,6 +267,7 @@
 	speed: 1000,
 	speedAsDuration: true
 });
+
 
     </script>
     
