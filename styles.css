@@ -251,13 +251,20 @@ hr{
     bottom: 40%;
     opacity: 1;
 }
-.reproductor{
+.service-desc i{
     border: none;
     font-size: 50px;
     margin: 20px auto;
     height: 0.2px;
     color: #fff;
   }
+
+.service-desc .fa{
+    cursor: pointer;
+    outline: none;
+}
+
+
 
 
 

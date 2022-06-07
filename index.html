@@ -14,7 +14,7 @@
 </head>
 <body>
     <section id="banner">
-        <img src="./IMAGENES/logo.png" alt="" id="logo">
+        <img src="" alt="" id="logo">
         <div id="banner-text">
             <h1>BEΛTS & K!TS</h1> 
             <p>100% Original Productions For Sale</p>
@@ -72,22 +72,22 @@
             <img src="./IMAGENES/LIMELOVE.jpg" alt="">
             <div class="overlay"></div>
             <div class="service-desc">
-                <h3>LIME LOVE</h3>
+                <h3>LIME LOVE (SAD TRAP)</h3>
                 <hr>
-                <button class="reproductor">
-                    <i class="fa-solid fa-play" id="boton"></i>
-                </button>
+                
+                <i class="fa-solid fa-play" id="boton"></i>
+                
             </div>
         </div>
         <div id="single-service">
-            <img src="./IMAGENES/jazz.jpg" alt="" id="jazz">
+            <img src="./IMAGENES/persecucion.png" alt="">
             <div class="overlay"></div>
             <div class="service-desc">
-                <h3>JAZZ</h3>
+                <h3>PERSECUTION</h3>
                 <hr>
-                <button class="reproductor">
-                    <i class="fa-solid fa-play"></i>
-                </button>
+                
+                    <img src="./IMAGENES/PLAY.png" alt="" id="botonplay">
+              
             </div>
         </div>
         <div id="single-service">
@@ -96,9 +96,9 @@
             <div class="service-desc">
                 <h3>R&B</h3>
                 <hr>
-                <button class="reproductor">
+                
                     <i class="fa-solid fa-play"></i>
-                </button>
+               
             </div>
         </div>
         <div id="single-service">
@@ -107,9 +107,53 @@
             <div class="service-desc">
                 <h3>TECHNO</h3>
                 <hr>
-                <button class="reproductor">
+               
                     <i class="fa-solid fa-play"></i>
-                </button>
+               
+            </div>
+        </div>
+        <div id="single-service">
+            <img src="./IMAGENES/afrobeat.png" alt="">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>AFROBEAT</h3>
+                <hr>
+                
+                    <i class="fa-solid fa-play"></i>
+                
+            </div>
+        </div>
+        <div id="single-service">
+            <img src="./IMAGENES/r&n.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>R&B</h3>
+                <hr>
+               
+                    <i class="fa-solid fa-play"></i>
+              
+            </div>
+        </div>
+        <div id="single-service">
+            <img src="./IMAGENES/drill.png" alt="">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>DRILL</h3>
+                <hr>
+                
+                    <i class="fa-solid fa-play"></i>
+                
+            </div>
+        </div>
+        <div id="single-service">
+            <img src="./IMAGENES/r&n.jpg" alt="">
+            <div class="overlay"></div>
+            <div class="service-desc">
+                <h3>R&B</h3>
+                <hr>
+                
+                <i class="fa-solid fa-play"></i>
+                
             </div>
         </div>
     </div>
@@ -120,10 +164,20 @@
     <script>
 
         let LoveLime = document.getElementById("LoveLime");
-        let icon = document.getElementById("boton")
-        icon.onclick = function(){
-           LoveLime.play()
-        }
+        let icon = document.getElementsByClassName("fa-solid fa-play")
+        icon.addEventListener("click", ()=>{
+            if(LoveLime.paused){
+                LoveLime.play();
+                icon.classlist.remove("fa-solid fa-play")
+                icon.classlist.add("fa-solid fa-pause")
+            }else{
+                LoveLime.pause()
+                icon.classlist.add("fa-solid fa-play")
+                icon.classlist.remove("fa-solid fa-pause")
+            }
+        })
+
+
     </script>
 </section>
 
@@ -137,7 +191,7 @@
     <div class="hero">
         
         
-        <form onsubmit="sendEmail(); reset(); return false;">
+        <form action="https://formsubmit.co/8ed61226f9703332c450ab5967e81151" method="post">
             <div class="row">
                 <div class="input-group">
                     <input type="text" id="Name" required>
@@ -179,24 +233,7 @@
         <i class="fa fa-soundcloud"></i>
     </div>
 
-    <script src=" https://smtpjs.com/v3/smtp.js"></script>
-    <script>
     
-    function sendEmail(){
-                Email.send({
-            Host : "smtp.gmail.com",
-            Username : "marcos.pallache02@gmail.com",
-            Password : "palida123",
-            To : 'pakotaz98@gmail.com',
-            From : document.getElementById("email").value, 
-            Subject : "New Contact Form Enquiry",
-            Body : "And this is the body"
-        }).then(
-        message => alert(message)
-        );
-
-    }
-    </script>
 
 
 
