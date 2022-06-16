@@ -72,11 +72,16 @@
             <img src="./IMAGENES/LIMELOVE.jpg" alt="">
             <div class="overlay"></div>
             <div class="service-desc">
-                <h3>LIME LOVE (SAD TRAP)</h3>
+                <h3>SAD TRAP</h3>
                 <hr>
-                
-                <i class="fa-solid fa-play" id="boton"></i>
-                
+                <audio id="player" src="./MUSICA/LIME LOVE.mp3"></audio>
+                <div class="player" >
+                    <div class="control">
+                        <i class="fa-solid fa-play" id="playbtn"></i>
+                    </div>
+                    
+                </div>
+                <script src="./reproductor.js"></script>
             </div>
         </div>
         <div id="single-service">
@@ -85,30 +90,48 @@
             <div class="service-desc">
                 <h3>PERSECUTION</h3>
                 <hr>
+                <audio id="player-2" src="./MUSICA/PERSECUTION.mp3"></audio>
+                <div class="player-2">
+                    <div class="control">
+                        <i class="fa-solid fa-play" id="playbtn-2"></i>
+                    </div>
+                </div>
                 
-                    <img src="./IMAGENES/PLAY.png" alt="" id="botonplay">
-              
+              <script src="./reproductor2.js"></script>
             </div>
         </div>
         <div id="single-service">
-            <img src="./IMAGENES/r&n.jpg" alt="">
+            <img src="./IMAGENES/bedroom.jpg" alt="">
             <div class="overlay"></div>
             <div class="service-desc">
-                <h3>R&B</h3>
+                <h3>BEDROOM POP</h3>
                 <hr>
+                <audio id="player-3" src="./MUSICA/BEDROOM POP.mp3"></audio>
+                <div class="player-3">
+                    <div class="control">
+                        <i class="fa-solid fa-play" id="playbtn-3"></i>
+                    </div>
+                    <script src="./reprductor3.js"></script>
+                </div>
                 
-                    <i class="fa-solid fa-play"></i>
+                    
                
             </div>
         </div>
         <div id="single-service">
-            <img src="./IMAGENES/techno.jpg" alt="">
+            <img src="./IMAGENES/inspiracion.jpg" alt="">
             <div class="overlay"></div>
             <div class="service-desc">
-                <h3>TECHNO</h3>
+                <h3>INSPIRATION</h3>
                 <hr>
-               
-                    <i class="fa-solid fa-play"></i>
+                <audio id="player-4" src="./MUSICA/INSPIRATION.mp3"></audio>
+                <div class="player-4">
+                    <div class="control">
+                        <i class="fa-solid fa-play" id="playbtn-4"></i>
+                    </div>
+                    <script src="./reproductor4.js"></script>
+                </div>
+                    
                
             </div>
         </div>
@@ -118,54 +141,72 @@
             <div class="service-desc">
                 <h3>AFROBEAT</h3>
                 <hr>
-                
-                    <i class="fa-solid fa-play"></i>
+                <audio id="player-5" src="./MUSICA/AFROBEAT.mp3"></audio>
+                <div class="player-5">
+                    <div class="control">
+                        <i class="fa-solid fa-play" id="playbtn-5"></i>
+                    </div>
+                    <script src="./reproductor5.js"></script>
+                </div>
+                    
                 
             </div>
         </div>
         <div id="single-service">
-            <img src="./IMAGENES/r&n.jpg" alt="">
+            <img src="./IMAGENES/bajoagua.jpg" alt="">
             <div class="overlay"></div>
             <div class="service-desc">
-                <h3>R&B</h3>
+                <h3>UNDERWATER</h3>
                 <hr>
-               
-                    <i class="fa-solid fa-play"></i>
+                <audio id="player-6" src="./MUSICA/WATER.mp3"></audio>
+                <div class="player-6">
+                    <div class="control">
+                        <i class="fa-solid fa-play" id="playbtn-6"></i>
+                    </div>
+                    <script src="./reproductor6.js"></script>
+                </div>
+                    
               
             </div>
         </div>
         <div id="single-service">
-            <img src="./IMAGENES/drill.png" alt="">
+            <img src="./IMAGENES/drill.jpg" alt="">
             <div class="overlay"></div>
             <div class="service-desc">
                 <h3>DRILL</h3>
                 <hr>
-                
-                    <i class="fa-solid fa-play"></i>
+                <audio id="player-7" src="./MUSICA/DRILL.mp3"></audio>
+                <div class="player-7">
+                    <div class="control">
+                        <i class="fa-solid fa-play" id="playbtn-7"></i>
+                    </div>
+                    <script src="./reproductor7.js"></script>
+                </div>
                 
             </div>
         </div>
+        
+        
+        
         <div id="single-service">
-            <img src="./IMAGENES/r&n.jpg" alt="">
+            <img src="./IMAGENES/walking.jpg" alt="">
             <div class="overlay"></div>
             <div class="service-desc">
-                <h3>R&B</h3>
+                <h3>AROUND IN THE NIGHT TIME</h3>
                 <hr>
+                <audio id="player-8" src="./MUSICA/running (mix1).wav"></audio>
+                <div class="player-8">
+                    <div class="control">
+                        <i class="fa-solid fa-play" id="playbtn-8"></i>
+                    </div>
+                    <script src="./reproductor8.js"></script>
+                </div>
                 
-                <i class="fa-solid fa-play"></i>
                 
             </div>
         </div>
     </div>
 
-    <audio id="LoveLime">
-        <source src="./MUSICA/LIME LOVE.mp3" type="audio/mp3">
-    </audio>
-    <script>
-
-      
-
-    </script>
 </section>
 
 <!-- CONTACT -->
@@ -186,7 +227,7 @@
                 </div>
                 <div class="input-group">
                     <input name="Cell Number"  type="text" id="Number" required>
-                    <label for="Number"><i class="fa-solid fa-phone"></i> Number</label>
+                    <label for="Number"><i class="fa-solid fa-phone"></i> Number (+ country code)</label>
                 </div>
             </div>
             <div class="row">

@@ -374,6 +374,6 @@ textarea:valid~label
 }
 @media screen and (max-width: 770px){
     .input-group{
-        grid-template-columns: 2fr;
+        grid-template-columns: 3fr;
     }
 }
